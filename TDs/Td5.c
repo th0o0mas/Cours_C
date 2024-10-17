@@ -6,7 +6,7 @@
 int Ecrit_Fichier(FILE *fich_lect, char *nom_fich_ecrit, int nb_lignes)
 {
     
-    FILE *Nouveau_fichier;
+    FILE  *Nouveau_fichier;
     if (Nouveau_fichier = fopen(nom_fich_ecrit,"w"))
     {
         char Tableau_Initial[TAILLE_MAX];
