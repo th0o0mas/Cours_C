@@ -64,10 +64,10 @@ int main(int argc,char *argv[])
 
 
 
-    if (fichier = fopen(argv[1], "r"))
+    if ((fichier = fopen(argv[1], "r"))!=NULL && argc =4)
     {
         printf("\nFichier bien ouvert\n");
-        Ecrit_Fichier(fichier, argv[],10);
+        Ecrit_Fichier(fichier, argv[2],argv[3]);
     }
     else
     {
